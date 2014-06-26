@@ -1,24 +1,25 @@
 # Ruboty::Delay
-
-TODO: Write a gem description
+Execute ruboty commands after given seconds.
 
 ## Installation
-
-Add this line to your application's Gemfile:
+Add this line to your ruboty's Gemfile:
 
     gem 'ruboty-delay'
 
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install ruboty-delay
-
 ## Usage
+```
+> ruboty delay 3 ruboty ping
+# ...3 seconds after
+pong
+```
 
-TODO: Write usage instructions here
+You can use ruboty as a timer combination with [ruboty-echo](https://github.com/taiki45/ruboty-echo).
+
+```
+> ruboty delay 1200 ruboty echo Finish 20 min period!
+# ...20 minutes after
+Finish 20 min period!
+```
 
 ## Contributing
 
